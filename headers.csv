@@ -1,0 +1,170 @@
+SANITIZED_HEADERS = [
+    {
+        "User-Agent": "ExampleOrgBot/1.0 (+https://example.org/bot; bot@example.org)",
+        "From": "bot@example.org",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "MyResearchCrawler/2.3 (+https://university.edu/crawler; research@university.edu)",
+        "From": "research@university.edu",
+        "Accept": "text/html",
+        "Accept-Language": "en-GB,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Referer": "https://university.edu/project"
+    },
+    {
+        "User-Agent": "DataCollectionBot/0.9 (+https://company.com/bot-info; ops@company.com)",
+        "From": "ops@company.com",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "OpenDataScraper/1.0 (+https://opendata.example/bot; admin@opendata.example)",
+        "From": "admin@opendata.example",
+        "Accept": "text/html,application/xml",
+        "Accept-Language": "en;q=0.9",
+        "Accept-Encoding": "gzip, br",
+        "Connection": "keep-alive",
+        "If-Modified-Since": "Mon, 01 Jan 2000 00:00:00 GMT"
+    },
+    {
+        "User-Agent": "NewsArchiverBot/3.1 (+https://newsorg.example/archiver; contact@newsorg.example)",
+        "From": "contact@newsorg.example",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Referer": "https://newsorg.example"
+    },
+    {
+        "User-Agent": "AcademicCrawler/0.7 (+https://dept.univ.edu/crawler; lab@dept.univ.edu)",
+        "From": "lab@dept.univ.edu",
+        "Accept": "application/xml, text/xml, */*;q=0.1",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "CatalogSyncBot/1.2 (+https://retailer.example/sync; sync@retailer.example)",
+        "From": "sync@retailer.example",
+        "Accept": "application/json",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Referer": "https://retailer.example/dashboard"
+    },
+    {
+        "User-Agent": "OpenLibraryCrawler/2.0 (+https://library.example/bot; lib-admin@library.example)",
+        "From": "lib-admin@library.example",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-US,en;q=0.7",
+        "Accept-Encoding": "gzip, br",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "MetricsCollector/0.5 (+https://analytics.example/info; devops@analytics.example)",
+        "From": "devops@analytics.example",
+        "Accept": "*/*",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "PublicRecordsBot/1.0 (+https://gov.example/bot; records@gov.example)",
+        "From": "records@gov.example",
+        "Accept": "text/html,application/xml",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "ImageIndexBot/1.5 (+https://images.example/bot; images@images.example)",
+        "From": "images@images.example",
+        "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.8",
+        "Accept-Encoding": "gzip, br",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "ProductCrawler/4.0 (+https://shop.example/bot; crawler@shop.example)",
+        "From": "crawler@shop.example",
+        "Accept": "application/json, text/plain",
+        "Accept-Language": "en-IN,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Referer": "https://shop.example"
+    },
+    {
+        "User-Agent": "ScholarDataBot/0.3 (+https://scholar.example/bot; scholar@scholar.example)",
+        "From": "scholar@scholar.example",
+        "Accept": "application/xml, text/xml",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "OrgDirectoryBot/2.2 (+https://org.example/bot; admin@org.example)",
+        "From": "admin@org.example",
+        "Accept": "text/html",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "ForumArchivist/1.0 (+https://forum.example/bot; archive@forum.example)",
+        "From": "archive@forum.example",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, br",
+        "Connection": "keep-alive",
+        "Referer": "https://forum.example"
+    },
+    {
+        "User-Agent": "OpenGeoCrawler/0.8 (+https://geo.example/bot; geo@geo.example)",
+        "From": "geo@geo.example",
+        "Accept": "application/json, */*;q=0.1",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "CitationCollector/1.4 (+https://cite.example/bot; cite@cite.example)",
+        "From": "cite@cite.example",
+        "Accept": "application/xml, text/html",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "EventScrapeBot/0.6 (+https://events.example/bot; events@events.example)",
+        "From": "events@events.example",
+        "Accept": "text/html,application/json",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, br",
+        "Connection": "keep-alive",
+        "Referer": "https://events.example"
+    },
+    {
+        "User-Agent": "HealthDataCrawler/1.0 (+https://health.example/bot; health@health.example)",
+        "From": "health@health.example",
+        "Accept": "application/json, text/plain",
+        "Accept-Language": "en-US",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive"
+    },
+    {
+        "User-Agent": "PolicyBot/1.1 (+https://policy-institute.org/bot; data@policy-institute.org)",
+        "From": "data@policy-institute.org",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Referer": "https://policy-institute.org/research"
+    }
+]
